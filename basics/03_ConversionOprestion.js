@@ -21,3 +21,15 @@ console.log(typeof isLoggedIn);
 // 1 -> true / 0 -> false
 // "" -> false 
 // "Akash" -> true
+
+/*
+    Oeration
+*/
+let value = 10
+let negvalue= -value
+//console.log(-value);
+
+let str1 = "Hello"
+let str2 = " Akash"
+
+console.log(str1+str2);
