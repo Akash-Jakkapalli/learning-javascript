@@ -1,9 +1,7 @@
 
-
-
-let name = "Akash"//string dataType
-let age = 19 //num
-let isLoggedIn = true //boolean
+let name = "Akash" //string dataType
+let age = 19  //num
+let isLoggedIn = true  //boolean
 
 // Number => 2 to pow 53
 // 

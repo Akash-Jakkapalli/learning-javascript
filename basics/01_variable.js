@@ -1,14 +1,15 @@
 const accountId = 2003
 let accountEmail = "akash123@gmail.com"
-accountCity = "pune"
 var accountPassword = "0215"
+accountCity = "pune"
+let accountState; // --> undefined
 
-//accountId 2 is //not allowed
+//accountId = 2 //not allowed
 
- accountEmail = "akash123@gmail.com"
- accountPassword = "0215"
+ accountEmail = "abcd@.com"
+ accountPassword = "1234"
 console.log(accountId);
-console.table([accountId, accountEmail, accountPassword, accountCity ]);
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
 /*
 prefer not to use var
 becouse of issue in block scope and functional scope
