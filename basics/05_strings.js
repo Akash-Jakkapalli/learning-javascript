@@ -26,7 +26,7 @@ console.log(url.replace('%20', '-'));
 console.log(url.includes('supreme'));
 
 const collageName = "presidency University"
-console.log(collageName.split(' '));
+console.log(collageName.split(' '));   //.split is a method 
 
 
 
