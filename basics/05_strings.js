@@ -6,13 +6,27 @@ const repoCount = 2
 // declare String
 
 const myName = "akash"
+// console.log(myName); 
+
 const myLastNmae = new String(`Jakkapalli`)
 
-//console.log(myName);
-console.log(myLastNmae.length);
+// console.log(myLastNmae.substring(0,5));
+// console.log(myLastNmae.length);
+// console.log(myLastNmae.toUpperCase());
 
-console.log(myLastNmae.toUpperCase());
 
+const newString = "     Akash   "
+
+// console.log(newString);
+// console.log(newString.trim()); // .trim() -> removes empty space
+
+const url = "https://supreme%20bassoon"
+
+console.log(url.replace('%20', '-'));
+console.log(url.includes('supreme'));
+
+const collageName = "presidency University"
+console.log(collageName.split(' '));
 
 
 
