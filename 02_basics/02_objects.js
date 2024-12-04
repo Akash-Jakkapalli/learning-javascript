@@ -1,4 +1,11 @@
-//Objects
+//Objects part-1
+
+// Singleton
+// Object.creat
+
+
+
+// Object Literals - - ->
 
 const mySym = Symbol("key1")
 
