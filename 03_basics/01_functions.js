@@ -41,5 +41,17 @@ function logginUserMassage (username = "jony"){
 }
 
 // console.log(logginUserMassage("AKASH"));
-console.log(logginUserMassage());
+// console.log(logginUserMassage());
 
+function calculateCartPrice(...num1) { // ... -> restOparetor (it will return in array)
+    return num1
+}
+console.log(calculateCartPrice(100, 200, 300));
+
+// OBJ
+const User = { 
+    userName: "Akash123",
+    password: 1234567890
+}
+
+//FUN
