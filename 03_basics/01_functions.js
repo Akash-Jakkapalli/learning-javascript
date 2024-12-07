@@ -49,9 +49,27 @@ function calculateCartPrice(...num1) { // ... -> restOparetor (it will return in
 console.log(calculateCartPrice(100, 200, 300));
 
 // OBJ
-const User = { 
-    userName: "Akash123",
-    password: 1234567890
-}
+// const User = { 
+//     userName: "Akash123",
+//     password: 1234567890
+// }
 
-//FUN
+// pass obj in fun
+
+function handelObject (anyUser){
+    console.log(`This is User name ${anyUser.userName} and this is password ${anyUser.password}`);
+    
+}
+// console.log(handelObject(User));
+
+handelObject({
+    userName: "sam",
+    password: 2000
+})
+
+const myNewArray = [100, 200, 300, 400, 500]
+
+function retunSecondValue(getArray) {
+    return getArray[2]
+}
+console.log(retunSecondValue(myNewArray));
