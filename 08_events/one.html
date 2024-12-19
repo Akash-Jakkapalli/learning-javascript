@@ -8,21 +8,67 @@
 <body style="background-color: #414141; color: aliceblue;">
 
     <h2>Amazing Image</h2>
-    <ul>
+
+    <ul id="images">
         <li><a style="color: orange;" href="https://www.google.com/" id="google">Google</a></li>
-        <p id="AKASH">AKASH</p>
         <li><img width="200" id="dog" src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></li>
         <li><img width="200" id="loc1" src="https://images.pexels.com/photos/29811853/pexels-photo-29811853/free-photo-of-silhouettes-at-the-louvre-pyramid-entrance.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></li>
         <li><img width="200" id="loc2" src="https://images.pexels.com/photos/20170635/pexels-photo-20170635/free-photo-of-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></li>
     </ul>
 </body>
 <script>
+    // --> onclick
     // document.getElementById('dog').onclick = function(){
     //     alert('xyz')
     // }
     // or
-    document.getElementById('dog').addEventListener('click', function(){
-        alert
-    })
+    // attachEvent
+    // jQuery -> onEventListener
+
+    // type, timeSamp, prevetDefault
+    // targer, toElement, currentTarget
+    // srcElement
+    // clientX, clientY, screenX, screenY
+    //altKey, controlKey, shiftKey
+
+    // document.getElementById('dog').addEventListener('click',function(){
+    //     //alert('dog img clicked')
+    // })
+    
+    // document.getElementById('loc1').addEventListener('click',function(e){
+    //     //console.log(e); 
+    // }, false)
+
+    // // bubbling
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('clicked inside ul'); 
+    // }, false)
+    // document.getElementById('dog').addEventListener('click',function(e){
+    //     console.log('dog  clicked'); 
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log('google clicked');
+
+    // },false)
+
+    //work --> remove the img if i click the img
+
+    document.getElementById('images').addEventListener('click', function(e){
+        // e.preventDefault();
+        // e.stopPropagation();
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+
+        
+    }, false)
+
+
+
 </script>
 </html>
